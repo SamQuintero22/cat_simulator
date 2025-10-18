@@ -2,14 +2,14 @@ package main.java.simulator.models;
 
 import main.java.simulator.behaviors.*;
 
-public class HouseCat extends Cat{
+public class OldCat extends Cat{
 
     MeowBehavior meow;
     MoveBehavior move;
 
-    public HouseCat(String name) {
+    public OldCat(String name) {
         super(name);
-        meow = new purringMeow();
+        meow = new SilentMeow();
         move = new LazyMove();
     }
     

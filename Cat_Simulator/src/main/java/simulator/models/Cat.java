@@ -3,7 +3,7 @@ package main.java.simulator.models;
 import main.java.simulator.behaviors.*;
 
 public abstract class Cat{
-    
+
     private String name;
     private MeowBehavior meow;
     private MoveBehavior move;
@@ -12,6 +12,10 @@ public abstract class Cat{
 
         this.name = name;
 
+    }
+
+    public String getName(){
+        return name;
     }
 
     public void setMeow(MeowBehavior meow){
