@@ -18,3 +18,17 @@ Objetivo: Aplicar Strategy para modelar distintos tipos de maullido y desplazami
   StrayCat, HouseCat, TigerCat.
 
 * Cada gato debe poder cambiar su comportamiento dinámicamente.
+
+* Implemente una clase CatPark que mantenga una lista de gatos y tenga métodos:
+
+  makeAllMove()
+
+  makeAllMeow()
+
+* Escriba tests para:
+
+  Verificar que cada gato usa su comportamiento inicial.
+
+  Verificar que los comportamientos pueden cambiar en tiempo de ejecución.
+
+  Verificar que CatPark aplica correctamente las estrategias de todos los gatos.
