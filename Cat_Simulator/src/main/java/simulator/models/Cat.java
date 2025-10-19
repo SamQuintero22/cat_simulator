@@ -5,8 +5,8 @@ import main.java.simulator.behaviors.*;
 public abstract class Cat{
 
     private String name;
-    private MeowBehavior meow;
-    private MoveBehavior move;
+    MeowBehavior meowBehavior;
+    MoveBehavior moveBehavior;
     
     public Cat(String name){
 
@@ -18,20 +18,29 @@ public abstract class Cat{
         return name;
     }
 
+    abstract void display();
+
     public void setMeow(MeowBehavior meow){
-        this.meow = meow;
+        this.meowBehavior = meow;
     }
 
     public void setMove(MoveBehavior move){
-        this.move = move;
+        this.moveBehavior = move;
     }
 
     public MeowBehavior getMeowBehavior(){
-        return this.meow;
+        return this.meowBehavior;
     }
 
     public MoveBehavior getMoveBehavior(){
-        return this.move;
+        return this.moveBehavior    ;
     }
 
+    public void performMeow(){
+        meowBehavior.meow();
+    }
+
+    public void performMove(){
+        moveBehavior.move();
+    }
 }

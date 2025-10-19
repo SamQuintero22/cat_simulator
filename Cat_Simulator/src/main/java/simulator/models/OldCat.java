@@ -4,13 +4,15 @@ import main.java.simulator.behaviors.*;
 
 public class OldCat extends Cat{
 
-    MeowBehavior meow;
-    MoveBehavior move;
-
     public OldCat(String name) {
         super(name);
-        meow = new SilentMeow();
-        move = new LazyMove();
+        meowBehavior = new LoudMeow();
+        moveBehavior = new WalkMove();
     }
+
+    public void display(){
+        System.out.println("Iam a Oooold Cat");
+    }
+    
     
 }

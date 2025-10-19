@@ -4,13 +4,14 @@ import main.java.simulator.behaviors.*;
 
 public class StrayCat extends Cat{
 
-    MeowBehavior meow;
-    MoveBehavior move;
-
     public StrayCat(String name) {
         super(name);
-        meow = new LoudMeow();
-        move = new RunMove();
+        meowBehavior = new LoudMeow();
+        moveBehavior = new RunMove();
     }
     
+    public void display(){
+        System.out.println("Iam a Street Cat");
+    }
+
 }

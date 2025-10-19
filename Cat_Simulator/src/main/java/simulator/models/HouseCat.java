@@ -4,13 +4,14 @@ import main.java.simulator.behaviors.*;
 
 public class HouseCat extends Cat{
 
-    MeowBehavior meow;
-    MoveBehavior move;
-
     public HouseCat(String name) {
         super(name);
-        meow = new purringMeow();
-        move = new LazyMove();
+        meowBehavior = new purringMeow();
+        moveBehavior = new LazyMove();
+    }
+
+    public void display(){
+        System.out.println("Iam a house Cat");
     }
     
 }
