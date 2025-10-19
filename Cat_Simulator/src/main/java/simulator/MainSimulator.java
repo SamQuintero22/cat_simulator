@@ -28,6 +28,7 @@ public class MainSimulator {
         parqueDeGatos.agregarGato(new OldCat("cristian"));
         parqueDeGatos.agregarGato(new StrayCat("carmen"));
 
+        parqueDeGatos.mostrarTiposGatos();
         parqueDeGatos.GoAllMeow();
         parqueDeGatos.GoAllMove();
 

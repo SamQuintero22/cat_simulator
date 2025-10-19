@@ -18,7 +18,7 @@ public abstract class Cat{
         return name;
     }
 
-    abstract void display();
+    public abstract void display();
 
     public void setMeow(MeowBehavior meow){
         this.meowBehavior = meow;
@@ -33,7 +33,7 @@ public abstract class Cat{
     }
 
     public MoveBehavior getMoveBehavior(){
-        return this.moveBehavior    ;
+        return this.moveBehavior;
     }
 
     public void performMeow(){

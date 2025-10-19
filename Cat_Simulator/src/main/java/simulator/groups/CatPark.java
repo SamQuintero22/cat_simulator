@@ -19,6 +19,12 @@ public class CatPark{
         listaGatos.add(gatito);
     }
 
+    public void mostrarTiposGatos(){
+        for (Cat gatitoActual : listaGatos) {
+            gatitoActual.display();
+        }
+    }
+
     public void GoAllMeow(){
 
         for (Cat gatitoActual : listaGatos) {
