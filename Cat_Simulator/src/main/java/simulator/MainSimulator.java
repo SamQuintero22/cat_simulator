@@ -2,6 +2,7 @@ package main.java.simulator;
 
 import main.java.simulator.behaviors.LoudMeow;
 import main.java.simulator.behaviors.RunMove;
+import main.java.simulator.groups.CatPark;
 import main.java.simulator.models.*;
 
 public class MainSimulator {
@@ -18,6 +19,18 @@ public class MainSimulator {
 
         gatito.performMeow();
         gatito.performMove();
+
+        System.out.println("A continuacion parque de gatos: ");
+
+        CatPark parqueDeGatos = new CatPark();
+
+        parqueDeGatos.agregarGato(new HouseCat("francisco"));
+        parqueDeGatos.agregarGato(new OldCat("cristian"));
+        parqueDeGatos.agregarGato(new StrayCat("carmen"));
+
+        parqueDeGatos.GoAllMeow();
+        parqueDeGatos.GoAllMove();
+
 
     }
 }
